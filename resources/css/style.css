@@ -1,0 +1,45 @@
+html {
+  font-size: 16px;
+  font-family: "Helvetica", sans-serif;
+}
+
+body {
+  max-width: 960px;
+}
+
+/*Header Styling*/
+
+#header {
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  border: 1px solid black;
+}
+
+#header .left {
+  display: flex;
+  float: left;
+  margin: auto 0 auto 24px;
+  height: 2rem;
+}
+
+.left h1 {
+  margin: auto 0;
+}
+
+.left span {
+  font-weight: bold;
+}
+
+#header .right {
+  float: right;
+  margin: auto 1.5rem auto auto;
+}
+
+#nav ul {
+  display: flex;
+}
+
+#nav li {
+  border-right: 1rem solid lightblue;
+}
