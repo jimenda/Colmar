@@ -7,19 +7,18 @@ body {
   max-width: 960px;
 }
 
-/*Header Styling*/
+/*Header Style*/
 
 #header {
   display: flex;
   height: 4rem;
   width: 100%;
-  border: 1px solid black;
 }
 
 #header .left {
   display: flex;
   float: left;
-  margin: auto 0 auto 24px;
+  margin: auto 0 auto 1.5rem;
   height: 2rem;
 }
 
@@ -42,4 +41,47 @@ body {
 
 #nav li {
   border-right: 1rem solid lightblue;
+  height: 2rem;
+  padding-top: 0.75rem;
+}
+
+/*Banner Style*/
+
+.banner {
+  display: flex;
+  background-color: lightgray;
+}
+
+.banner img {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.banner-content {
+  text-align: left;
+  margin: auto 0;
+}
+
+.banner-content h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+.banner-content p {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  padding: 1.5rem 0;
+}
+
+.banner-content .button {
+  background-color: gray;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
 }
