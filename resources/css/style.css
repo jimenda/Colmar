@@ -5,6 +5,7 @@ html {
 
 body {
   max-width: 960px;
+  margin: 0 auto;
 }
 
 /*Header Style*/
@@ -50,32 +51,41 @@ body {
 .banner {
   display: flex;
   background-color: lightgray;
+  width: 100%;
 }
 
-.banner img {
+.left-content {
   width: 60%;
-  margin: 2rem 1.5rem;
+  margin: 2rem 0 2rem 1.5rem;
 }
 
-.banner-content {
+.left-content img {
+  width: 100%;
+}
+
+.right-content {
+  width: 40%;
   text-align: left;
-  margin: auto 0;
 }
 
-.banner-content h2 {
-  font-size: 2rem;
+.banner .right-content {
+  margin: auto 1.5rem auto 1.5rem;
+}
+
+.banner .right-content h2 {
+  font-size: 1.5rem;
   line-height: 2rem;
   font-weight: bold;
 }
 
-.banner-content p {
-  font-size: 1.5rem;
+.banner .right-content p {
+  font-size: 1rem;
   line-height: 1.5rem;
   font-weight: bold;
   padding: 1.5rem 0;
 }
 
-.banner-content .button {
+.banner .right-content .button {
   background-color: gray;
   text-align: center;
   padding: 0.5rem 0;
@@ -84,4 +94,70 @@ body {
 .button a {
   text-decoration: none;
   color: white;
+}
+
+/*Main Content*/
+
+.main-content {
+  display: flex;
+  width: 100%;
+}
+
+.left-content h3 {
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.left-content p {
+  margin: 1rem 0;
+}
+
+.top,
+.middle,
+.bottom {
+  display: flex;
+  width: 100%;
+  border: 1px solid lightgray;
+  padding: 0.5rem;
+}
+
+.bottom {
+  background-color: lightgray;
+}
+
+.main-content .right-content {
+  margin: auto 1.5rem auto 1.5rem;
+  margin-top: 2rem;
+}
+
+.sidebar-image {
+  width: 35%;
+  margin-right: 1rem;
+}
+
+.right-content img {
+  width: 100%;
+}
+
+.sidebar-content {
+  width: 65%;
+  line-height: 1.25;
+  margin: 0 auto;
+}
+
+.sidebar-content h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-content p {
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-content a {
+  font-size: 0.75rem;
+  text-decoration: none;
 }
