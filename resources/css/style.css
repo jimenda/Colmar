@@ -184,8 +184,11 @@ h2 {
   margin: 1rem 0;
 }
 
-.row1, .row2 {
+.row1 {
   margin: 2rem 4.5rem;
+}
+
+.row1, .row2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,6 +221,7 @@ h2 {
 }
 
 .thesis .content {
+  margin-top: 2rem;
   display: flex;
 }
 
@@ -237,4 +241,25 @@ video {
   font-size: 1rem;
   font-weight: normal;
   text-align: left;
+}
+
+/*Footer Style*/
+
+#footer {
+  display: flex;
+  color: gray;
+}
+
+.left {
+  margin: 1rem auto 1rem 1rem;
+}
+
+.right {
+  margin: 1rem 1rem 1rem auto;
+}
+
+#footer a {
+  padding-right: 0.5rem;
+  text-decoration: none;
+  color: gray;
 }
