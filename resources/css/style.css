@@ -191,6 +191,10 @@ h2 {
   align-items: center;
 }
 
+.row2 {
+  padding-bottom: 2rem;
+}
+
 .row1 img, .row2 img {
   height: auto;
   overflow: hidden;
@@ -204,4 +208,33 @@ h2 {
 
 .column1, .column2 {
   margin-right: 2rem;
+}
+
+/*Thesis Content*/
+
+.thesis {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.thesis .content {
+  display: flex;
+}
+
+.thesis .left-content {
+  margin: 0 2.5rem;
+}
+
+video {
+  width: 100%;
+}
+
+.thesis .left-content h3 {
+  text-align: left;
+}
+
+.thesis .left-content p {
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: left;
 }
