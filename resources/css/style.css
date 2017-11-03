@@ -161,3 +161,47 @@ body {
   font-size: 0.75rem;
   text-decoration: none;
 }
+
+/*Courses Style*/
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.courses {
+  background-color: #DCDCDC;
+}
+
+.courses h3 {
+  font-size: 1.25;
+  font-weight: bold;
+}
+
+.courses h4 {
+  margin: 1rem 0;
+}
+
+.row1, .row2 {
+  margin: 2rem 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row1 img, .row2 img {
+  height: auto;
+  overflow: hidden;
+}
+
+.course-text {
+  padding: 1rem;
+  background-color: white;
+  height: 6rem;
+}
+
+.column1, .column2 {
+  margin-right: 2rem;
+}
