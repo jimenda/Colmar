@@ -319,6 +319,47 @@ h2 {
   width: 30%;
 }
 
+/*Courses Mobile*/
+
+@media only screen and (max-width: 480px){
+
+  .courses {
+    margin: 1rem;
+    background-color: white;
+  }
+
+  .courses h2 {
+    padding-bottom: 1rem;
+  }
+
+  .courses h4,
+  .courses p {
+    display: none;
+  }
+
+  .row1,
+  .row2 {
+    display: block;
+    margin: 0;
+  }
+
+  .row1 img, .row2 img {
+    display: none;
+  }
+
+  .column1,
+  .column2,
+  .column3 {
+    width: 100%;
+  }
+
+  .course-text {
+    height: auto;
+    background-color: lightgray;
+    margin-bottom: 0.5rem;
+  }
+}
+
 /*Thesis Content*/
 
 .thesis {
