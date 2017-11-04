@@ -149,6 +149,19 @@ body {
     text-align: left;
     margin: 1rem;
   }
+
+  .banner .right-content h2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+  }
+
+  .banner .right-content p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 100%;
+   }
+
 }
 
 /*Main Content*/
@@ -182,8 +195,7 @@ body {
 }
 
 .main-content .right-content {
-  margin: auto 1.5rem auto 1.5rem;
-  margin-top: 2rem;
+  margin: auto 1.5rem;
 }
 
 .sidebar-image {
@@ -215,6 +227,40 @@ body {
 .sidebar-content a {
   font-size: 0.75rem;
   text-decoration: none;
+}
+
+/*Mobile Main Content*/
+
+@media only screen and (max-width: 480px) {
+  .main-content {
+    display: block;
+  }
+
+  .banner .left-content {
+    display: none;
+  }
+
+  .banner .right-content {
+    width: 100%;
+  }
+
+  .main-content .right-content {
+    margin: auto 1rem;
+  }
+
+  .top,
+  .middle,
+  .bottom {
+    display: block;
+  }
+
+  .sidebar-image {
+    width: 100%;
+  }
+
+  .sidebar-content {
+    width: 100%;
+  }
 }
 
 /*Courses Style*/
