@@ -343,6 +343,10 @@ h2 {
     margin: 0;
   }
 
+  .row2 {
+    padding-bottom: 0;
+  }
+
   .row1 img, .row2 img {
     display: none;
   }
@@ -393,6 +397,26 @@ video {
 
 .thesis .right-content {
   margin-right: 1rem;
+}
+
+/*Thesis Mobile*/
+
+@media only screen and (max-width: 480px) {
+
+  .thesis .content {
+    margin-top: 1rem;
+    display: block;
+  }
+
+  .thesis .left-content h3,
+  .thesis .left-content p {
+    display: none;
+  }
+
+  .thesis .right-content {
+    display: none;
+  }
+
 }
 
 /*Footer Style*/
