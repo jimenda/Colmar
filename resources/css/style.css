@@ -47,7 +47,39 @@ body {
 
 .border-link {
   border-right: 1rem solid lightblue;
+}
 
+.mobile {
+  display: none;
+}
+
+/*Mobile Navigation*/
+
+@media only screen and (max-width: 480px) {
+  #header .left {
+    display: none;
+  }
+
+  #header .right {
+    width: 100%;
+    float: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    align-items: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  #nav .mobile ul {
+    align-content: space-between;
+    width: 100%;
+  }
 }
 
 /*Banner Style*/
@@ -73,7 +105,7 @@ body {
 }
 
 .banner .right-content {
-  margin: auto 1.5rem auto 1.5rem;
+  margin: auto 1.5rem;
 }
 
 .banner .right-content h2 {
@@ -98,6 +130,25 @@ body {
 .button a {
   text-decoration: none;
   color: white;
+}
+
+/*Banner Mobile*/
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    display: block;
+  }
+
+  .left-content {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  .right-content {
+    width: 100%;
+    text-align: left;
+    margin: 1rem;
+  }
 }
 
 /*Main Content*/
