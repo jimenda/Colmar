@@ -36,11 +36,11 @@ body {
   margin: auto 1.5rem auto auto;
 }
 
-#nav ul {
+#nav .desktop ul {
   display: flex;
 }
 
-#nav li {
+#nav .desktop li {
   height: 2rem;
   padding-top: 0.75rem;
 }
@@ -53,16 +53,17 @@ body {
   display: none;
 }
 
-/*Mobile Navigation*/
+/*Header - Mobile*/
 
 @media only screen and (max-width: 480px) {
+
   #header .left {
     display: none;
   }
 
   #header .right {
     width: 100%;
-    float: none;
+    margin: auto;
   }
 
   .desktop {
@@ -71,18 +72,22 @@ body {
 
   .mobile {
     display: flex;
-    align-items: space-between;
-    margin-left: 1rem;
-    margin-right: 1rem;
   }
 
-  #nav .mobile ul {
-    align-content: space-between;
+  .mobile ul {
     width: 100%;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-around;
+    margin: auto;
+  }
+
+  .mobile li {
+    margin: auto;
   }
 }
 
-/*Banner Style*/
+/*Banner Content*/
 
 .banner {
   display: flex;
@@ -132,7 +137,7 @@ body {
   color: white;
 }
 
-/*Banner Mobile*/
+/*Banner Content - Mobile*/
 
 @media only screen and (max-width: 480px) {
   .banner {
@@ -140,28 +145,25 @@ body {
   }
 
   .left-content {
-    width: 100%;
-    margin: 1rem;
+    width: auto;
+    padding-top: 1rem;
+    margin: 0 1rem;
   }
 
   .right-content {
-    width: 100%;
+    width: auto;
     text-align: left;
-    margin: 1rem;
-  }
-
-  .banner .right-content h2 {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: bold;
+    padding-bottom: 1rem;
+    margin: 0 1rem;
   }
 
   .banner .right-content p {
-    font-size: 1rem;
-    line-height: 1.5rem;
     width: 100%;
    }
 
+   .button {
+     margin-bottom: 1rem;
+   }
 }
 
 /*Main Content*/
@@ -229,38 +231,80 @@ body {
   text-decoration: none;
 }
 
-/*Mobile Main Content*/
+/*Main Content - Tablet*/
+
+@media only screen and (max-width: 1024px) {
+  .top,
+  .middle,
+  .bottom {
+    display: block;
+    width: auto;
+    margin: 0;
+  }
+
+  .sidebar-image {
+    display: none;
+  }
+
+  .sidebar-content {
+    width: auto;
+  }
+
+  .main-content .left-content {
+    margin-right: 0.5rem;
+  }
+
+  .main-content .right-content {
+    margin: 2rem 0;
+  }
+}
+
+/*Main Content - Mobile*/
 
 @media only screen and (max-width: 480px) {
   .main-content {
     display: block;
-  }
-
-  .banner .left-content {
-    display: none;
-  }
-
-  .banner .right-content {
     width: 100%;
   }
 
+  .main-content .left-content {
+    display: none;
+    margin-right: 0.5rem;
+  }
+
   .main-content .right-content {
-    margin: auto 1rem;
+      width: auto;
+      margin: auto 1rem;
+  }
+
+  .main-content .desktop img {
+    display: none;
+  }
+
+  .main-content .mobile img {
+    display: block;
+    width: auto;
   }
 
   .top,
   .middle,
   .bottom {
     display: block;
+    width: auto;
   }
 
   .sidebar-image {
-    width: 100%;
+    width: auto;
   }
 
   .sidebar-content {
-    width: 100%;
+    width: auto;
   }
+
+  .main-content .right-content {
+    margin: auto 0;
+  }
+
 }
 
 /*Courses Style*/
@@ -319,9 +363,30 @@ h2 {
   width: 30%;
 }
 
-/*Courses Mobile*/
+/*Course Content - Tablet*/
+
+@media only screen and (max-width: 1024px) {
+  .row1,
+  .row2 {
+    margin: 1rem auto;
+  }
+
+  .courses h4,
+  .courses p {
+    display: none;
+  }
+
+  .course-text {
+    height: 3rem;
+  }
+}
+
+/*Course Content - Mobile*/
 
 @media only screen and (max-width: 480px){
+  h2 {
+    padding-top: 0;
+  }
 
   .courses {
     margin: 1rem;
@@ -399,7 +464,7 @@ video {
   margin-right: 1rem;
 }
 
-/*Thesis Mobile*/
+/*Thesis Content - Mobile*/
 
 @media only screen and (max-width: 480px) {
 
@@ -438,4 +503,30 @@ video {
   padding-right: 0.5rem;
   text-decoration: none;
   color: gray;
+}
+
+@media only screen and (max-width: 1024px) {
+  #footer .left {
+    margin: 1rem auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  #footer .right {
+    display: none;
+  }
+}
+
+/*Footer Content - Mobile*/
+
+@media only screen and (max-width: 480px) {
+  #footer .left {
+    margin: 1rem auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  #footer .right {
+    display: none;
+  }
 }
